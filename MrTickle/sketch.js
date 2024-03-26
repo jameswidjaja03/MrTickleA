@@ -21,7 +21,7 @@ function draw() {
     background(0);
   drawFloor(); // for reference only
   character.update();
-  character.draw();
+  character.display();
 }
 class MrTickles {
   constructor(x, y) {
@@ -47,7 +47,7 @@ class MrTickles {
   
     // ******** //
     // ⬇️ draw your dancer from here ⬇️
-  draw() {
+  display() {
     push();
     translate(this.x, this.y);
     this.drawLegs();
